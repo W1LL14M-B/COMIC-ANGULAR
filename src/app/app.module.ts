@@ -3,10 +3,20 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { LoginComponent } from './components/login/login.component';
+import { MovieComponent } from './components/movie/movie.component';
+import { SearchComponent } from './components/search/search.component';
+import { DetallemovieComponent } from './components/detallemovie/detallemovie.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    LoginComponent,
+    MovieComponent,
+    SearchComponent,
+    DetallemovieComponent
   ],
   imports: [
     BrowserModule,
