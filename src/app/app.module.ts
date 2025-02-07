@@ -8,6 +8,9 @@ import { LoginComponent } from './components/login/login.component';
 import { MovieComponent } from './components/movie/movie.component';
 import { SearchComponent } from './components/search/search.component';
 import { DetallemovieComponent } from './components/detallemovie/detallemovie.component';
+import { FormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import { DetallemovieComponent } from './components/detallemovie/detallemovie.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
+ 
   ],
   providers: [
     provideClientHydration(withEventReplay())
