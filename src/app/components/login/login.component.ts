@@ -15,13 +15,14 @@ export class LoginComponent {
   
   constructor(private router: Router) { }
 
-onLogin() {
-  if (this.email === 'admin' && this.password === 'admin') {
+
+  onLogin() {
+    // Simulación de autenticación
+    console.log('Usuario autenticado correctamente');
+    
+    // Redirigir a /navbar
     this.router.navigate(['/navbar']);
-  } else {
-alert('Credenciales Invalidas')
   }
 
-}
 }
 
